@@ -1,0 +1,16 @@
+#app {
+    display: grid;
+    grid-template-columns: 264px 1fr;
+}
+
+#side_bar {
+    background-color: #313a46;
+    height: 100vh;
+    border: 20px solid #eef0f7;
+}
+
+
+header {
+    background-color: red;
+    height: 60px;
+}
