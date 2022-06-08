@@ -7,6 +7,11 @@
     <title>Analitic | Sua ferramenta de análises financeiras</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -24,16 +29,111 @@
 
 
         <nav id="side_bar">
-            <a href="">Início</a>
-            <a href="">Sobre</a>
-            <a href="">Mais</a>
+
         </nav>
 
 
         <div id="conteudo">
-            <header>
-                Este é o cabeçalho
+            <header class="navbar navbar-light bg-light">
+                <div>
+                    <div class="input-group">
+                        <input type="text" class="form-control dropdown-toggle" placeholder="Search..." id="top-search">
+                        <span class="mdi mdi-magnify search-icon"></span>
+                        <button class="input-group-text btn-primary" type="submit">Search</button>
+                    </div>
+                </div>
+                <button class=" ms-2 btn btn-primary"><i class="btn-icon"><img style="color: white;"
+                    src="./assets/icons/filter-variant.svg" alt=""></i></button>
             </header>
+
+
+            <div class="d-flex justify-content-between" style="margin-bottom: -4px;">
+                <div>
+                    <h4 style="padding-top: 7px; font-weight: 700; font-size: 18px;">Dashboard</h4>
+                </div>
+                <div class="d-flex">
+                    <div class="input-group">
+                        <input type="text" value="01/01/2022" class="form-control form-control-light"
+                            id="dash-daterange">
+                        <label for="dash-daterange" class="input-group-text btn-primary btn text-white">
+                            <i class="btn-icon"><img style="color: white;" src="./assets/icons/calendar-month.svg"
+                                    alt=""></i>
+                        </label>
+                    </div>
+
+                    <button class="ms-2 btn btn-primary"><i class="btn-icon"><img style="color: white;"
+                                src="./assets/icons/autorenew.svg" alt=""></i></button>
+                    <button class=" ms-2 btn btn-primary"><i class="btn-icon"><img style="color: white;"
+                                src="./assets/icons/filter-variant.svg" alt=""></i></button>
+                </div>
+            </div>
+
+            <div id="dashboard">
+                <div class="row">
+
+                    <div class="col-md-3">
+                        <div class="col ">
+                            <div class="card">
+                                <div class="card-body">
+                                    Customers
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    Revenue
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-md-3">
+                        <div class="col">
+                            <div class="card ">
+                                <div class="card-body">
+                                    Orders
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col">
+                            <div class="card ">
+                                <div class="card-body">
+                                    Growth
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-md-6">
+                        <div class="col">
+                            <div class="card" style="height: 344px;">
+                                <div class="card-body">
+                                    PROJECTIONS VS ACTUALS
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
         </div>
 
 
