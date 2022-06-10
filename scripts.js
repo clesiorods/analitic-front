@@ -14,7 +14,7 @@ $(window).resize(function(){
 
  setTimeout(() => {
     setSideBar();
- }, 400);
+ }, 100);
 
 
  function setSideBar() {
