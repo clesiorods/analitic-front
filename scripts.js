@@ -33,8 +33,8 @@ function sideBarMax() {
     $("#side_bar").addClass('side_bar_max');
     $("#side_bar").removeClass('side_bar_med');
     $("#side_bar").removeClass('side_bar_min');
-    $("#title_an").css("padding-left", "0px");
     setTimeout(() => {
+        $("#title_an").css("padding-left", "0px");
         $("#title_alitic").css("opacity", 1);
     }, 300);
 }
