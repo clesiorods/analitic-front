@@ -18,9 +18,9 @@ $(window).resize(function(){
 
 
  function setSideBar() {
-    if($(window).width() > 1300) {
+    if($(window).width() > 1200) {
         sideBarMax();
-    } else if($(window).width() < 800) {
+    } else if($(window).width() < 750) {
         sideBarMin();
     } else {
         sideBarMed();

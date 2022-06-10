@@ -4,6 +4,8 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Analitic | Sua ferramenta de análises financeiras</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -12,6 +14,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -20,19 +23,101 @@
 <body>
     <div id="app">
 
-        <nav tam="med" id="side_bar" class="side_bar_med">
-            <h1 class="title logo"><span style="padding-left: 11px;" id="title_an">An</span><span style="transition: .4s all; opacity: 0;" id="title_alitic">alitic</span></h1>
+        <nav tam="med" id="side_bar" style="overflow-x: hidden;" class="side_bar_med">
+            <h1 class="title logo"><span style="padding-left: 11px;" id="title_an">An</span><span
+                    style="transition: .4s all; opacity: 0;" id="title_alitic">alitic</span></h1>
+
+            <!-- <ul class="side-nav">
+                <li class="side-nav-title side-nav-item">Navegação</li>
+                <li style="color: white !important;" class="side-nav-item">
+                    <a href="apps-calendar.html" class="side-nav-link">
+                        <i class="uil-calender"></i>
+                        <span> Dashborad </span>
+                    </a>
+                </li>
+                <li class="side-nav-title side-nav-item">Apps</li>
+                <li class="side-nav-item">
+                    <a href="apps-calendar.html" class="side-nav-link">
+                        <i class="uil-calender"></i>
+                        <span> Calendário </span>
+                    </a>
+                </li>
+                <li class="side-nav-item">
+                    <a href="apps-chat.html" class="side-nav-link">
+                        <i class="uil-comments-alt"></i>
+                        <span> Conversas </span>
+                    </a>
+                </li>
+                <li class="side-nav-item">
+                    <a data-bs-toggle="collapse" href="#sidebarCrm" aria-expanded="false" aria-controls="sidebarCrm"
+                        class="side-nav-link">
+                        <i class="uil uil-tachometer-fast"></i>
+                        <span> CRM </span>
+                    </a>
+                    <div class="collapse" id="sidebarCrm">
+                        <ul class="side-nav-second-level">
+                            <li>
+                                <a href="crm-dashboard.html">Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="crm-projects.html">Project</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="side-nav-item">
+                    <a data-bs-toggle="collapse" href="#sidebarEcommerce" aria-expanded="false"
+                        aria-controls="sidebarEcommerce" class="side-nav-link">
+                        <i class="uil-store"></i>
+                        <span> E-commerce </span>
+                        <span class="menu-arrow"></span>
+                    </a>
+                    <div class="collapse" id="sidebarEcommerce">
+                        <ul class="side-nav-second-level">
+                            <li>
+                                <a href="apps-ecommerce-products.html">Products</a>
+                            </li>
+                            <li>
+                                <a href="apps-ecommerce-products-details.html">Products Details</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="side-nav-item">
+                    <a data-bs-toggle="collapse" href="#sidebarEmail" aria-expanded="false" aria-controls="sidebarEmail"
+                        class="side-nav-link">
+                        <i class="uil-envelope"></i>
+                        <span> E-mail </span>
+                        <span class="menu-arrow"></span>
+                    </a>
+                    <div class="collapse" id="sidebarEmail">
+                        <ul class="side-nav-second-level">
+                            <li>
+                                <a href="apps-email-inbox.html">Inbox</a>
+                            </li>
+                            <li>
+                                <a href="apps-email-read.html">Read Email</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul> -->
         </nav>
+
+
+
+
 
         <div id="conteudo">
             <header class="navbar">
-                <div class="d-flex">
+                <div id="navbar_f1" class="d-flex">
                     <span onclick="mudaSideBar()" style="cursor: pointer;" class="button-menu-mobile open-left">
                         <i class="mdi mdi-menu"><img style="margin: 7px 17px 0 -4px;" src="./assets/icons/menu.svg"
                                 alt=""></i>
                     </span>
                     <div class="input-group">
-                        <input type="text" class="form-control dropdown-toggle" placeholder="buscar por..." id="top-search">
+                        <input type="text" class="form-control dropdown-toggle" placeholder="buscar por..."
+                            id="top-search">
                         <span class="mdi mdi-magnify search-icon"></span>
                         <button class="input-group-text btn btn-primary" type="submit">Buscar</button>
                     </div>
@@ -40,9 +125,11 @@
             </header>
 
 
-            <div id="title-dashborad" class="d-flex justify-content-between" style="margin-top: -4px; margin-bottom: -8px;">
+            <div id="title-dashborad" class="d-flex justify-content-between"
+                style="margin-top: -4px; margin-bottom: -8px;">
                 <div>
-                    <h4 style="margin-bottom: -20px; padding-top: 20px;  font-weight: 700; font-size: 18px;">Variações do dia</h4>
+                    <h4 style="margin-bottom: -20px; padding-top: 20px;  font-weight: 700; font-size: 18px;">Variações
+                        do dia</h4>
                 </div>
                 <div class="d-flex">
                     <div class="input-group">
@@ -106,7 +193,7 @@
                             <div class="card-body">
                                 <span clas>
                                     PROJECTIONS VS ACTUALS
-                                </span> 
+                                </span>
                                 <div id="chart"></div>
                             </div>
                         </div>
@@ -115,9 +202,11 @@
 
             </div>
 
-            <div id="title-dashborad" class="d-flex justify-content-start" style="margin-bottom: -4px; margin-top: 20px;">
+            <div id="title-dashborad" class="d-flex justify-content-start"
+                style="margin-bottom: -4px; margin-top: 20px;">
                 <div>
-                    <h4 style="padding-top: 14px; margin-bottom: -8px; font-weight: 700; font-size: 18px;">Análise de ativos</h4>
+                    <h4 style="padding-top: 14px; margin-bottom: -8px; font-weight: 700; font-size: 18px;">Análise de
+                        ativos</h4>
                 </div>
 
             </div>
@@ -185,9 +274,11 @@
 
     </div>
 </body>
+
 </html>
 
-<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 <script src="./graficos.js"></script>
 <script src="./scripts.js"></script>
