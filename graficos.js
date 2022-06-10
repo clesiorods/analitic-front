@@ -5,7 +5,6 @@ setTimeout(() => {
             type: 'area',
             height: '300px'
         },
-        
         series: [{
             name: 'CDI',
             data: [30, 40, 35, 50, 49, 60, 60, 91, 125]

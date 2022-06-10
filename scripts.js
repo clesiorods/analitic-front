@@ -33,7 +33,7 @@ function sideBarMax() {
     $("#side_bar").addClass('side_bar_max');
     $("#side_bar").removeClass('side_bar_med');
     $("#side_bar").removeClass('side_bar_min');
-    $("#title_alitic").show();
+    $("#title_an").css("padding-left", "0px");
     setTimeout(() => {
         $("#title_alitic").css("opacity", 1);
     }, 300);
@@ -45,9 +45,10 @@ function sideBarMed() {
     $("#side_bar").removeClass('side_bar_max');
     $("#side_bar").removeClass('side_bar_min');
     $("#title_alitic").css("opacity", 0);
-    setTimeout(() => {
-        $("#title_alitic").hide();
-    }, 300);
+    $("#title_an").css("padding-left", "11px");
+    // setTimeout(() => {
+    //     $("#title_alitic").hide();
+    // }, 300);
 }
 
 function sideBarMin() {
