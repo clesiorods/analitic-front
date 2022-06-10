@@ -20,15 +20,15 @@
 <body>
     <div id="app">
 
-        <nav id="side_bar">
-            <h1 class="title logo"><span>An</span>alitic</h1>
+        <nav tam="med" id="side_bar" class="side_bar_med">
+            <h1 class="title logo"><span id="title_an">An</span><span style="display: none; transition: .4s all; opacity: 0;" id="title_alitic">alitic</span></h1>
         </nav>
 
         <div id="conteudo">
             <header class="navbar">
                 <div class="d-flex">
-                    <span class="button-menu-mobile open-left">
-                        <i class="mdi mdi-menu"><img style="margin: 8px 17px 0 -4px;" src="./assets/icons/menu.svg"
+                    <span onclick="mudaSideBar()" style="cursor: pointer;" class="button-menu-mobile open-left">
+                        <i class="mdi mdi-menu"><img style="margin: 7px 17px 0 -4px;" src="./assets/icons/menu.svg"
                                 alt=""></i>
                     </span>
                     <div class="input-group">
@@ -181,6 +181,7 @@
 </body>
 </html>
 
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 <script src="./graficos.js"></script>
 <script src="./scripts.js"></script>

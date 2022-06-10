@@ -1,3 +1,7 @@
+/* * {
+    transition: .2s all;
+} */
+
 body {
     font-family: 'Nunito', sans-serif;
     color: #6c757d;
@@ -5,30 +9,59 @@ body {
 }
 
 #app {
-    display: grid;
-    grid-template-columns: 240px 1fr;
+    display: flex;
 }
 
 #side_bar {
     background-color: #313a46;
     height: 100vh;
+    transition: .3s all;
 }
 
 
+@media screen and (max-width: 800px) {
+    .side_bar_med {
+        width: 0px;
+        display: none;
+    }
+  }
+
+
+/* ////////////// SIDEBAR GRANDE ////////////// */
+.side_bar_max {
+    width: 260px;
+    padding-top: 20px;
+}
+/* ////////////// SIDEBAR MÉDIA /////////////// */
+.side_bar_med {
+    width: 70px;
+    padding-top: 15px;
+}
+/* ////////////// SIDEBAR PEQEUNA ///////////// */
+.side_bar_min {
+    width: 0px;
+    display: none;
+}
+
+
+
+
+
 .logo {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     text-align: center;
     font-size: 35px;
     font-weight: 400;
     color: white;
 }
 
-.logo span {
+#title_an {
     font-weight: 700;
     background: -webkit-linear-gradient(45deg, rgb(77, 213, 255), rgb(191, 123, 255));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 
 
 #conteudo {
@@ -37,6 +70,7 @@ body {
     padding-top: 90px;
     overflow-y: scroll;
     max-height: 100vh;
+    width: 100%;
 }
 
 

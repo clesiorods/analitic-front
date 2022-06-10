@@ -70,16 +70,16 @@ var options = {
 
     series: [{
         name: 'CDI',
-        data: [30, 40, 35, 50, 49, 60, 60, 91, 125]
+        data: [30, 40, 35, 50, 49, 60, 60, 91, 125, 130, 140, 144]
     }, {
         name: 'Minha Carteira',
-        data: [33, 45, 20, 45, 49, 70, 88, 99, 100]
+        data: [33, 45, 20, 45, 49, 70, 88, 99, 100, 90, 80, 100]
     }],
     dataLabels: {
         enabled: false
       },
     xaxis: {
-        categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
+        categories: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez']
     },
     legend: {
         position: "top",
@@ -91,7 +91,7 @@ var options = {
     },
     plotOptions: {
         bar: {
-            columnWidth: '20%',
+            columnWidth: '15%',
             barHeight: '70%',
         }
     }
